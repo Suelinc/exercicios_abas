@@ -90,7 +90,7 @@ class QueViagem extends StatelessWidget {
                   height: 20.0,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Column(
@@ -114,13 +114,11 @@ class QueViagem extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(
-                      width: 15.0,
-                    ),
-                    const Icon(Icons.airplanemode_active, size: 40.0),
-                    const SizedBox(
-                      width: 15.0,
-                    ),
+                    
+                    const RotatedBox(
+                      quarterTurns: 1,
+                      child: Icon(Icons.airplanemode_active, size: 48.0)),
+                    
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
@@ -173,9 +171,9 @@ class QueViagem extends StatelessWidget {
                           height: 20.0,
                         ),
                         const Text(
-                            'Datada de 1886, a icônica ponte de ferro é sem dúvida alguma um dos símbolos de Porto. A belíssima estrutura foi finalizada por um estudante de Gustave Eiffel - que criou a Torre Eiffel de Paris - e liga a cidade à Vila Nova de Gaia, o município vizinho, onde ficam as famosas caves do Vinho do Porto. '),
+                            'Datada de 1886, a icônica ponte de ferro é sem dúvida alguma um dos símbolos de Porto. A belíssima estrutura foi finalizada por um estudante de Gustave Eiffel - que criou a Torre Eiffel de Paris - e liga a cidade à Vila Nova de Gaia, o município vizinho, onde ficam as famosas caves do Vinho do Porto. ', textAlign: TextAlign.justify,),
                         const Text(
-                            'Enquanto a parte de cima da ponte é reservada para o metrô - e também para pedestres, de onde se tem vistas muito bonitas do Rio Douro -, a parte de baixo é exclusiva para o trânsito de carros, entretanto, também tem uma passagem, bem mais estreita, para aqueles que estão a pé. Aproveite para explorar as duas passagens, você não irá se arrepender! As paisagens são de tirar o fôlego!'),
+                            'Enquanto a parte de cima da ponte é reservada para o metrô - e também para pedestres, de onde se tem vistas muito bonitas do Rio Douro -, a parte de baixo é exclusiva para o trânsito de carros, entretanto, também tem uma passagem, bem mais estreita, para aqueles que estão a pé. Aproveite para explorar as duas passagens, você não irá se arrepender! As paisagens são de tirar o fôlego!', textAlign: TextAlign.justify,),
                         const SizedBox(
                           height: 40.0,
                         ),
@@ -189,8 +187,8 @@ class QueViagem extends StatelessWidget {
                         const SizedBox(
                           height: 20.0,
                         ),
-                        const Text('A Torre dos Clérigos é, com certeza, um dos pontos turísticos mais famosos do Porto. Uma construção de granito com 75 metros de altura e 240 degraus que conduzem o visitante do térreo ao topo, de onde se tem uma belíssima vista panorâmica da cidade e também de Vila Nova de Gaia.'),
-                        const Text('Para encarar os 240 degraus é preciso certo preparo físico, mas o esforço acaba valendo a pena diante das paisagens de tirar o fôlego. A subida custa €2 (sem o audioguia) e €5 (com o audioguia), porém, ao visitar a Casa da Música, o Museu Soares dos Reis e o Museu Serralves, você terá um desconto de 50% na entrada na Torre dos Clérigos.'),
+                        const Text('A Torre dos Clérigos é, com certeza, um dos pontos turísticos mais famosos do Porto. Uma construção de granito com 75 metros de altura e 240 degraus que conduzem o visitante do térreo ao topo, de onde se tem uma belíssima vista panorâmica da cidade e também de Vila Nova de Gaia.', textAlign: TextAlign.justify,),
+                        const Text('Para encarar os 240 degraus é preciso certo preparo físico, mas o esforço acaba valendo a pena diante das paisagens de tirar o fôlego. A subida custa €2 (sem o audioguia) e €5 (com o audioguia), porém, ao visitar a Casa da Música, o Museu Soares dos Reis e o Museu Serralves, você terá um desconto de 50% na entrada na Torre dos Clérigos.', textAlign: TextAlign.justify,),
                         const SizedBox(
                           height: 40.0,
                         ),
@@ -205,7 +203,7 @@ class QueViagem extends StatelessWidget {
                         const SizedBox(
                           height: 20.0,
                         ),
-                        const Text('Os anos se passaram, o sucesso foi estrondoso e a lenda em torno da livraria poderia até ser localizada nas obras: a de que a escola de bruxaria Hogwarts seria inspirada na Lello, mais precisamente as escadas curvas vermelhas. No livro, Rowling criou escadas labirínticas que mudam de lugar à revelia e fazem com que os estudantes se percam constantemente. Como diz o ditado italiano, se a história não é verdade, ao menos é bem contada.'),
+                        const Text('Os anos se passaram, o sucesso foi estrondoso e a lenda em torno da livraria poderia até ser localizada nas obras: a de que a escola de bruxaria Hogwarts seria inspirada na Lello, mais precisamente as escadas curvas vermelhas. No livro, Rowling criou escadas labirínticas que mudam de lugar à revelia e fazem com que os estudantes se percam constantemente. Como diz o ditado italiano, se a história não é verdade, ao menos é bem contada.', textAlign: TextAlign.justify,),
                         const SizedBox(
                           height: 40.0,
                         ),
